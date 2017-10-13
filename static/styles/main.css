@@ -65,14 +65,19 @@ h5 {
 
 .sticker {
     display: block;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     width: 25mm;
     height: 25mm;
     background-color: white;
     border: none;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+.sticker-img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .sticker-dark {
@@ -82,26 +87,32 @@ h5 {
 .sticker-square {
     width: 25mm;
     height: 25mm;
-    background-size: 90%;
+    padding: 1mm;
 }
 
 .sticker-rounded {
     width: 25mm;
     height: 25mm;
     border-radius: 2mm;
-    background-size: 90%;
+    padding: 1mm;
 }
 
 .sticker-circle {
     width: 30mm;
     height: 30mm;
     border-radius: 50%;
-    background-size: 90%;
+    padding: 2mm;
+}
+
+.sticker-big-circle {
+    width: 56mm;
+    height: 56mm;
+    border-radius: 50%;
+    padding: 3mm;
 }
 
 .banner {
     width: 160mm;
     height: 214mm;
-    background-size: 70%;
-    background-position-y: 30%;
+    padding: 30mm 20mm 66mm;
 }

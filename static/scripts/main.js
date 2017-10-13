@@ -75,7 +75,7 @@ function updateStickerImage(file) {
     var reader = new FileReader();
     reader.onload = function(ev) {
         var dataURL = ev.target.result;
-        document.querySelectorAll('.sticker').forEach(function(img) {
+        document.querySelectorAll('.sticker-img').forEach(function(img) {
             img.style = 'background-image: url(' + dataURL + ')';
         });
     }
