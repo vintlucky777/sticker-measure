@@ -18,6 +18,23 @@ h5 {
     font-weight: 400;
 }
 
+a {
+    color: #1E6AAD;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    border-bottom: 1px solid;
+    color: #1C5A8D;
+}
+
+a:active,
+a:focus,
+a:focus:active {
+    color: #1E598B;
+}
+
 .wrapper {
     width: 605px;
     width: 160mm;
