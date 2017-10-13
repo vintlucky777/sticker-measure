@@ -1,0 +1,8 @@
+{
+  "name": "sticker_measure",
+  "version": "1.0.0",
+  "description": "A web app to measure image file onto various printing sizes",
+  "main": "main.js",
+  "author": "Victor Klochikhin",
+  "license": "MIT"
+}

@@ -1,0 +1,107 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "San-Francisco", "Helvetica", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 400;
+}
+
+.wrapper {
+    width: 605px;
+    width: 160mm;
+    margin: auto;
+    position: relative;
+}
+
+.dropzone-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 30mm;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1000;
+    color: white;
+    transition: opacity .15s, color .2s, background-color .3s;
+}
+
+.dropzone-overlay:before {
+    content: 'Drag an image to adjust it onto stickers';
+}
+
+.dropzone-overlay.visible {
+    color: black;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.dropzone-overlay.active {
+    opacity: 1;
+    color: white;
+    background-color: rgba(67, 141, 233, 0.7);
+}
+
+.items-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20mm;
+}
+
+.sticker {
+    display: block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25mm;
+    height: 25mm;
+    background-color: white;
+    border: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+.sticker-dark {
+    background-color: #1A1818;
+}
+
+.sticker-square {
+    width: 25mm;
+    height: 25mm;
+    background-size: 90%;
+}
+
+.sticker-rounded {
+    width: 25mm;
+    height: 25mm;
+    border-radius: 2mm;
+    background-size: 90%;
+}
+
+.sticker-circle {
+    width: 30mm;
+    height: 30mm;
+    border-radius: 50%;
+    background-size: 90%;
+}
+
+.banner {
+    width: 160mm;
+    height: 214mm;
+    background-size: 70%;
+    background-position-y: 30%;
+}
